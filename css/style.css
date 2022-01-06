@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #444;
+}
+
+::selection {
+  color: #fff;
+  background: #444;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #666;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: linear-gradient(25deg, #14263f, #1b4778, #196bb7, #0092fa);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #060a1f;
+}
+
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.date div.hours {
+  background: linear-gradient(25deg, #042e60, #135e8b, #1793b7, #0bcbe6);
+}
+
+.date div.minutes {
+  background: linear-gradient(25deg, #230430, #571147, #8e1f5e, #c92f77);
+}
+
+.date div.seconds {
+  background: linear-gradient(25deg, #14263f, #1b4778, #196bb7, #0092fa);
+}
+
+.date div {
+  width: 250px;
+  height: 300px;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  border-radius: 10px;
+  color: #fff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.date div span {
+  font-size: 6em;
+}
+
+.date div span.size {
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 870px) {
+  .date div {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent);
+    margin-bottom: 50px;
+  }
+}
